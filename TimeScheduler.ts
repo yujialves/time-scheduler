@@ -138,7 +138,7 @@ export default class TimeScheduler {
           schedules.push({
             name: task.name,
             start: moment(this.wakeupTime).toDate(),
-            end: moment(this.wakeupTime + morningDuration).toDate(),
+            end: moment(this.wakeupTime + duration).toDate(),
           });
           return [schedules, 0];
         } else {
@@ -165,7 +165,7 @@ export default class TimeScheduler {
               schedules.push({
                 name: task.name,
                 start: moment(endOfFirstSchedule).toDate(),
-                end: moment(endOfFirstSchedule + durationBetweenTasks).toDate(),
+                end: moment(endOfFirstSchedule + duration).toDate(),
               });
               return [schedules, 0];
             } else {
@@ -232,7 +232,7 @@ export default class TimeScheduler {
           schedules.push({
             name: task.name,
             start: moment(this.wakeupTime).toDate(),
-            end: moment(this.wakeupTime + morningDuration).toDate(),
+            end: moment(this.wakeupTime + duration).toDate(),
           });
           return [schedules, 0];
         } else {
@@ -259,7 +259,7 @@ export default class TimeScheduler {
               schedules.push({
                 name: task.name,
                 start: moment(endOfFirstSchedule).toDate(),
-                end: moment(endOfFirstSchedule + durationBetweenTasks).toDate(),
+                end: moment(endOfFirstSchedule + duration).toDate(),
               });
               return [schedules, 0];
             } else {
